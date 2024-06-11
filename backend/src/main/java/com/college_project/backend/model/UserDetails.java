@@ -17,12 +17,14 @@ public class UserDetails
     private String department;
     private String licenceId;
     private String registerNumber;
+    private int verificationCode;
 
     // Constructors, getters, and setters
     public UserDetails() {
     }
 
-    public UserDetails(String firstName, String lastName, String email, String password, String phoneNumber, String department, String licenceId, String registerNumber) {
+    public UserDetails(String firstName, String lastName, String email, String password, String phoneNumber,
+            String department, String licenceId, String registerNumber, int verificationCode) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -31,6 +33,7 @@ public class UserDetails
         this.department = department;
         this.licenceId = licenceId;
         this.registerNumber = registerNumber;
+        this.verificationCode = verificationCode;
     }
     public String getFirstName() {
         return firstName;
@@ -87,13 +90,20 @@ public class UserDetails
     public void setLicenceId(String licenceId) {
         this.licenceId = licenceId;
     }
-
+    
     public String getRegisterNumber() {
         return registerNumber;
     }
-
+    
     public void setRegisterNumber(String registerNumber) {
         this.registerNumber = registerNumber;
     }
-}
+    
+    public int getVerificationCode() {
+        return verificationCode;
+    }
 
+    public void setVerificationCode(int verificationCode) {
+        this.verificationCode = verificationCode;
+    }
+}
